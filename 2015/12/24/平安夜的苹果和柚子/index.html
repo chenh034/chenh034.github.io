@@ -7,14 +7,13 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>在markdown中书写公式 | Chenh</title>
+    <title>平安夜的苹果和柚子 | Chenh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="chenh">
     
-    <meta name="description" content="用markdown书写内容很方便，用来写论文自然是不错，但对于理工科的学生，尤其是数学和物理专业，插入公式必不可免，之前总结的基本语法里并没有涉及书写数学物理公式。
-google了一下，通常要在markdown里插入公式，需要引用第三方服务器。
-Google Chart服务器这样的公式是以图片的形式">
+    <meta name="description" content="平安夜没收到苹果，但是室友和同学都很热心。加上红班长和蓥蓥姐的柚子，还是很开心的。~~  ~ ~~ ~~~~ 
+上图">
     
     
     
@@ -80,15 +79,15 @@ Google Chart服务器这样的公式是以图片的形式">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/12/10/在markdown中书写公式/" title="在markdown中书写公式" itemprop="url">在markdown中书写公式</a>
+      <a href="/2015/12/24/平安夜的苹果和柚子/" title="平安夜的苹果和柚子" itemprop="url">平安夜的苹果和柚子</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://chenh034.github.io" title="chenh">chenh</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-12-10T14:45:25.000Z" itemprop="datePublished">2015-12-10</time>
-    更新日期:<time datetime="2015-12-11T15:24:30.926Z" itemprop="dateModified">2015-12-11</time>
+    <time datetime="2015-12-24T14:55:54.000Z" itemprop="datePublished">2015-12-24</time>
+    更新日期:<time datetime="2015-12-24T15:10:03.194Z" itemprop="dateModified">2015-12-24</time>
     
   </p>
 </header>
@@ -97,42 +96,31 @@ Google Chart服务器这样的公式是以图片的形式">
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Google_Chart_u670D_u52A1_u5668"><span class="toc-number">1.</span> <span class="toc-text">Google Chart服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4F7F_u7528MathJax_u5F15_u64CE"><span class="toc-number">2.</span> <span class="toc-text">使用MathJax引擎</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u4E0A_u56FE"><span class="toc-number">1.</span> <span class="toc-text">上图</span></a></li></ol>
 		</div>
 		
-		<p>用markdown书写内容很方便，用来写论文自然是不错，但对于理工科的学生，尤其是数学和物理专业，插入公式必不可免，之前总结的基本语法里并没有涉及书写数学物理公式。</p>
-<p>google了一下，通常要在markdown里插入公式，需要引用第三方服务器。</p>
-<h2 id="Google_Chart_u670D_u52A1_u5668"><a href="#Google_Chart_u670D_u52A1_u5668" class="headerlink" title="Google Chart服务器"></a>Google Chart服务器</h2><p>这样的公式是以图片的形式出现的，书写时用一个img标签，引上第三方的库，再自定义公式<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"http://chart.googleapis.com/chart?cht=tx&amp;chl= 在此插入Latex公式"</span> style=<span class="string">"border:none;"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>例如：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="tag">img</span> src=<span class="string">"http://chart.googleapis.com/chart?cht=tx&amp;chl=\Large x=\frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125;"</span> style=<span class="string">"border:none;"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
-<p>但是据说使用Google Chart 服务器在输入及其复杂的Latex公式时无法解析。</p>
-<hr>
-<h2 id="u4F7F_u7528MathJax_u5F15_u64CE"><a href="#u4F7F_u7528MathJax_u5F15_u64CE" class="headerlink" title="使用MathJax引擎"></a>使用MathJax引擎</h2><p>如果说用刚才的方法生成的公式是图片，总是觉得有点不爽，还是文本比较靠谱。<br>那么就用MathJax引擎，<br>首先，需要在markdown里引入MathJax ，和js一样。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>直接引线上的就行，如果觉得不爽，下载到本地，从本地引入也可以。 我一直很纳闷，有时候用百度的静态cdn资源，一直挺好，在我的电脑上，工作室电脑上，同学电脑上都没问题，但是一发给老师看页面，老师就说页面bug了，一看控制台，原来是静态资源加载失败，只好换成本地的。 真心不知道这是怎么回事。</p>
-<p>回到MathJax上， 引入MathJax引擎后，就可以开始书写了。 直接输入LaTex公式就可以了，但是,\$$公式\$$表示行间公式，本来Tex中使用\(公式\)表示行内公式，但因为Markdown中\是转义字符，所以在Markdown中输入行内公式使用\(公式\)</p>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$<span class="variable">$x</span>=\frac&#123;-b\pm\sqrt&#123;b^<span class="number">2</span>-<span class="number">4</span>ac&#125;&#125;&#123;<span class="number">2</span>a&#125;$$</span><br><span class="line">\\(x=\frac&#123;-b\pm\sqrt&#123;b^<span class="number">2</span>-<span class="number">4</span>ac&#125;&#125;&#123;<span class="number">2</span>a&#125;\\)</span><br></pre></td></tr></table></figure>
-<p>$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$<br>\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)</p>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>  
+		<p>平安夜没收到苹果，但是室友和同学都很热心。加上红班长和蓥蓥姐的柚子，还是很开心的。<br>~~  <del>~ ~</del>~ ~~~~ </p>
+<h1 id="u4E0A_u56FE"><a href="#u4E0A_u56FE" class="headerlink" title="上图"></a>上图</h1><p><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/03CAEAF81E8FD1AA6569339CD6B4247A.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/0F7C2164AEED21B73A996F4508023402.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/496BABF3795124FBA7101A24B9261286.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/4B00BD6AF2BBA651EF4CE11DF1425C16.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/585B637464848ADEA215C439805A8F30.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/5CC8DE536ED055D9851B06E019131C4F.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/726CFAA0E74ECFE6F0A218E3208BCE5B.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/A93B3449B3001A69DAB370F4E11EE7B4.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/B01E8080300BF8F1C12ABD179DC39D12.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/B1EBF85C79E5A695E9200CE714011F67.jpg" alt=""><br><img src="http://chenh034-10014036.file.myqcloud.com/%E5%B9%B3%E5%AE%89%E5%A4%9C/38F0DAFF04BA90C6CA3D5BAEA49E6C41.jpg" alt=""></p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/markdown/">markdown</a>
+  <span></span> <a href="/tags/平安夜/">平安夜</a>
   </div>
 
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/代码/">代码</a>
+  <a class="article-category-link" href="/categories/生活/">生活</a>
 </div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://chenh034.github.io/2015/12/10/在markdown中书写公式/" data-title="在markdown中书写公式 | Chenh" data-tsina="null" class="share clearfix">
+  <div data-url="http://chenh034.github.io/2015/12/24/平安夜的苹果和柚子/" data-title="平安夜的苹果和柚子 | Chenh" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -141,19 +129,11 @@ Google Chart服务器这样的公式是以图片的形式">
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/12/12/hexo搭建个人博客/" title="hexo搭建个人博客">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  hexo搭建个人博客</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/12/08/markdown基础语法学习笔记/"  title="markdown基础语法学习笔记">
+<a href="/2015/12/21/php类的自动加载/"  title="php类的自动加载">
  <strong>NEXT:</strong><br/> 
- <span>markdown基础语法学习笔记
+ <span>php类的自动加载
 </span>
 </a>
 </div>
@@ -163,7 +143,7 @@ Google Chart服务器这样的公式是以图片的形式">
 	
 <section class="comment">
 	
-	<div class="ds-thread" data-title="在markdown中书写公式" data-thread-key="在markdown中书写公式" data-author-key="chenh" data-url="http://chenh034.github.io/post/在markdown中书写公式"></div>
+	<div class="ds-thread" data-title="平安夜的苹果和柚子" data-thread-key="平安夜的苹果和柚子" data-author-key="chenh" data-url="http://chenh034.github.io/post/平安夜的苹果和柚子"></div>
 	
 </section>
 
@@ -173,7 +153,7 @@ Google Chart服务器这样的公式是以图片的形式">
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Google_Chart_u670D_u52A1_u5668"><span class="toc-number">1.</span> <span class="toc-text">Google Chart服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u4F7F_u7528MathJax_u5F15_u64CE"><span class="toc-number">2.</span> <span class="toc-text">使用MathJax引擎</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#u4E0A_u56FE"><span class="toc-number">1.</span> <span class="toc-text">上图</span></a></li></ol>
   </div>
 
 <div id="asidepart">
