@@ -817,6 +817,13 @@ pre {
 figure.highlight {
   background: #272822;
   overflow: auto;
+  margin-left: 0px;
+}
+img {
+  margin-left: 0px;
+}
+blockquote {
+  margin-left: 0px;
 }
 span.line {
   color: #f8f8f2;
@@ -966,6 +973,7 @@ article .article-content abbr {
 article .article-content blockquote {
   border-left: 0.2em solid #308bf1;
   margin: 0.65em 0 0.65em 4%;
+  margin-left: 0;
   padding-left: 1%;
   line-height: 1.5;
   font-size: 110%;
@@ -1035,6 +1043,7 @@ article .article-content figure img {
   max-width: 100%;
   display: block;
   margin: auto;
+  margin-left: 0;
   height: auto;
   vertical-align: middle;
   padding-top: 0.5em;
