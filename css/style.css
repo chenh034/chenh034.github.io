@@ -814,6 +814,62 @@ pre {
   background: #272822;
   overflow: auto;
 }
+span .comment,
+span .title {
+  color: highlight-comment;
+}
+span .variable,
+span .attribute,
+span .tag,
+span .regexp,
+span .ruby .constant,
+span .xml .tag .title,
+span .xml .pi,
+span .xml .doctype,
+span .html .doctype,
+span .css .id,
+span .css .class,
+span .css .pseudo {
+  color: #f27761;
+}
+span .number,
+span .preprocessor,
+span .built_in,
+span .literal,
+span .params,
+span .constant {
+  color: #fd720d;
+}
+span .class,
+span .ruby .class .title,
+span .css .rules .attribute {
+  color: #39ff14;
+}
+span .string,
+span .value,
+span .inheritance,
+span .header,
+span .ruby .symbol,
+span .xml .cdata {
+  color: #99cc95;
+}
+span .css .hexcolor {
+  color: #63a440;
+}
+span .function,
+span .python .decorator,
+span .python .title,
+span .ruby .function .title,
+span .ruby .title .keyword,
+span .perl .sub,
+span .javascript .title,
+span .coffeescript .title {
+  color: #00f;
+}
+span .keyword,
+span .javascript .function {
+  color: #c9c;
+}
 figure.highlight {
   background: #272822;
   overflow: auto;
@@ -827,9 +883,6 @@ blockquote {
 }
 span.line {
   color: #f8f8f2;
-}
-span.keyword {
-  color: #6ac62e;
 }
 span.attribute {
   color: #a6e22e;
@@ -849,7 +902,7 @@ span.comment {
 td.gutter {
   width: 24px;
   padding-left: 6px;
-  padding-right: 10px;
+  padding-right: 14px;
   text-align: right;
   color: #8f908a;
 }
